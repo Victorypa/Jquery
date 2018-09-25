@@ -1,4 +1,10 @@
 $(document).ready(function() {
+
+  $("a")
+  $("#some-id")
+  $(".someclass")
+  $("header > ul:has(a)")
+
   // setInterval(function(){ // Function inside works with 1000ms interval
   //   $(".blue-block").fadeIn('3000', function () {
   //   $(this).animate({ top: 100 }, { duration: 1000 });
@@ -144,17 +150,20 @@ $(document).ready(function() {
   //     );
   //   });
   // });
-  $('#postForm').submit(function(e){
-    e.preventDefault();
+  // $('#postForm').submit(function(e){
+  //   e.preventDefault();
 
-    var title = $('title').val();
-    var body = $('#body').val();
-    var url = $(this).attr('action');
+  //   var title = $('title').val();
+  //   var body = $('#body').val();
+  //   var url = $(this).attr('action');
 
-    $.post(url, {title:title, body:body}).
-      done(function(data){
-      console.log('Post saved'); 
-      console.log(data);
-    });
-  });
+  //   $.post(url, {title:title, body:body}).
+  //     done(function(data){
+  //     console.log('Post saved'); 
+  //     console.log(data);
+  //   });
+  // });
+
+
+
 });
