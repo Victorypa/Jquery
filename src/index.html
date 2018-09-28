@@ -2,25 +2,25 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- Template Basic Images Start -->
-  <meta property="og:image" content="path/to/image.jpg">
-  <link rel="icon" href="img/favicon/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
-  <!-- Template Basic Images End -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+    <!-- Template Basic Images End -->
 
-  <!-- Custom Browsers Color Start -->
-  <meta name="theme-color" content="#0083ff">
-  <!-- Custom Browsers Color End -->
-  <link rel="stylesheet" href="css/libs.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <title>Document</title>
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#0083ff">
+    <!-- Custom Browsers Color End -->
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
 </head>
 
 <body>
-  <!-- <section class="test">
+    <!-- <section class="test">
         <div class="container">
 
             <h1 id="blue-block">
@@ -104,7 +104,7 @@
         </div>
 
     </section> -->
-  <!-- 
+    <!-- 
     <section class="aj">
         <div id="container">
             <div id="result">
@@ -121,7 +121,7 @@
     </section> -->
 
 
-  <!-- <div class="items">
+    <!-- <div class="items">
         <div class="item" data-price='2500'>Товар 1</div>
         <div class="item" data-price='1700'>Товар 2</div>
         <div class="item" data-price='1300'>Товар 3</div>
@@ -131,102 +131,127 @@
 
     </div> -->
 
-  <input type="text" name='num1'> +
-  <input type="text" name='num2'>
-  <input type="button" name='calc' value="=">
-  <span class="res"></span>
-  <br>
-  <input type="text" name='num3'> *
-  <input type="text" name='num4'>
-  <input type="button" name='calc2' value="=">
-  <span class="res2"></span>
-  <br>
-  <input type="text" name='num5'> /
-  <input type="text" name='num6'>
-  <input type="button" name='calc3' value="=">
-  <span class="res3"></span>
-  <br>
-  <input type="text" name='num7'> -
-  <input type="text" name='num8'>
-  <input type="button" name='calc4' value="=">
-  <span class="res4"></span>
+    <input type="text" name='num1'>
+    <input type="button" name='calc' value="+">
+    <input type="button" name='calc2' value="-">
+    <input type="button" name='calc3' value="*">
+    <input type="button" name='calc4' value="/">
+    <input type="text" name='num2'>
+    <span class="res">=</span>
 
 
-  <script>
-    // window.onload = function (e) {
-    //     var items = document.querySelectorAll('.items .item');
-    //     var divPrice = document.querySelector('.value');
+    <script>
+        var btn1 = document.querySelector('input[name=calc]');
+        var btn2 = document.querySelector('input[name=calc2]');
+        var btn3 = document.querySelector('input[name=calc3]');
+        var btn4 = document.querySelector('input[name=calc4]');
+        var inp1 = document.querySelector('input[name=num1]');
+        var inp2 = document.querySelector('input[name=num2]');
+        var span = document.querySelector('.res');
 
-    //     for (var i = 0; i < items.length; i++) {
-    //         items[i].onclick = function () {
-    //             this.classList.toggle('item-active');
-    //             calcPrice();
-    //         }
-    //     }
+        btn1.onclick = function () {
+            var res = parseInt(inp1.value) + parseInt(inp2.value);
+            span.innerHTML = res;
+        }
+        btn2.onclick = function () {
+            var res = parseInt(inp1.value) - parseInt(inp2.value);
+            span.innerHTML = res;
+        }
+        btn3.onclick = function () {
+            var res = parseInt(inp1.value) * parseInt(inp2.value);
+            span.innerHTML = res;
+        }
+        btn4.onclick = function () {
+            var res = parseInt(inp1.value) / parseInt(inp2.value);
+            span.innerHTML = res;
+        }
 
-    //     function calcPrice() {
-    //         var price = 0;
+        // window.onload = function (e) {
+        //     var items = document.querySelectorAll('.items .item');
+        //     var divPrice = document.querySelector('.value');
 
-    //         for (var i = 0; i < items.length; i++) {
-    //             if (items[i].classList.contains('item-active')) {
-    //                 price += parseInt(items[i].getAttribute('data-price'));
-    //             }
+        //     for (var i = 0; i < items.length; i++) {
+        //         items[i].onclick = function () {
+        //             this.classList.toggle('item-active');
+        //             calcPrice();
+        //         }
+        //     }
 
-    //         }
-    //         divPrice.innerHTML = price;
-    //     }
-    // }
+        //     function calcPrice() {
+        //         var price = 0;
 
-    window.onload = function (e) {
-      var btn1 = document.querySelector('input[name=calc]');
-      var btn2 = document.querySelector('input[name=calc2]');
-      var btn3 = document.querySelector('input[name=calc3]');
-      var btn4 = document.querySelector('input[name=calc4]');
-      var inp1 = document.querySelector('input[name=num1]');
-      var inp2 = document.querySelector('input[name=num2]');
-      var inp3 = document.querySelector('input[name=num3]');
-      var inp4 = document.querySelector('input[name=num4]');
-      var inp5 = document.querySelector('input[name=num5]');
-      var inp6 = document.querySelector('input[name=num6]');
-      var inp7 = document.querySelector('input[name=num7]');
-      var inp8 = document.querySelector('input[name=num8]');
-      var span = document.querySelector('.res');
-      var span2 = document.querySelector('.res2');
-      var span3 = document.querySelector('.res3');
-      var span4 = document.querySelector('.res4');
+        //         for (var i = 0; i < items.length; i++) {
+        //             if (items[i].classList.contains('item-active')) {
+        //                 price += parseInt(items[i].getAttribute('data-price'));
+        //             }
 
-      btn1.onclick = function () {
-        var res = parseInt(inp1.value) + parseInt(inp2.value);
-        span.innerHTML = res;
-        
+        //         }
+        //         divPrice.innerHTML = price;
+        //     }
+        // }
 
-      }
-      btn2.onclick = function () {
-        var res = parseInt(inp3.value) * parseInt(inp4.value);
-        span2.innerHTML = res;
+        // var name = prompt('Введите ваше имя', '');
+        // alert('Ваше имя' + 'name');
 
-      }
-      btn3.onclick = function () {
-        var res = parseInt(inp5.value) / parseInt(inp6.value);
-        span3.innerHTML = res;
+        // var name = prompt('Каково официальное название JS', '');
+        // if (name =='ES') {
+        //     alert('ВЕРНО');
+        // }
+        // else {
+        //     alert ("Неверно")
+        // }
 
-      }
-      btn4.onclick = function () {
-        var res = parseInt(inp7.value) - parseInt(inp8.value);
-        span4.innerHTML = res;
+        //     var value = prompt('Введите значение', '');
+        // if (value > 0) {
+        //     alert('1');
+        // }
+        // if (value < 0) {
+        //     alert('-1');
+        // }
+        // if (value == 0) {
+        //     alert('0');
+        // }
 
-      }
+        // var login = prompt('Введите логин', '');
+
+        // if (login == 'Админ') {
+        //     var password = prompt('Введите пароль', '');
+        //     if (password == 'Пам') {
+        //         alert('Добро пожаловать!');
+        //     } else if (pass == null) {
+        //         alert('Вход отменён');
+        //     } else {
+        //         alert('Пароль неверен');
+        //     }
+        // }
+        // else if (login == null) {
+        //     alert('Вход отменён');
+        // }
+        // else {
+        //     alert('Я вас не знаю');
+        // }
+
+        // if (a + b < 4) {
+        //     result = 'Мало';
+        // } else {
+        //     result = 'Много';
+        // }
+
+        //    access = (a + b < 4) ? 'Мало': 'Много';
+
+        // var login = prompt('Введите имя', '');
+        // (login == 'Вася') ?
+        //     alert('Привет') : alert('Здравствуйте');
+
+       if (age <  14 || age > 90);
+       if (!(age >=  14 && age <= 90));
+
+    </script>
 
 
-    }
 
 
-  </script>
-
-
-
-
-  <script src="js/scripts.min.js"></script>
+    <script src="js/scripts.min.js"></script>
 </body>
 
 </html>
