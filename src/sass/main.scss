@@ -80,27 +80,59 @@ html, body, ul, li{
 	padding: 0;
 }
 
-#gallery{
-	width: 860px;
-	margin: 0 auto;
-	text-align: center;
+// #gallery{
+// 	width: 860px;
+// 	margin: 0 auto;
+// 	text-align: center;
+// }
+
+// #gallery .photos{
+// 	position: relative;
+// 	height: 670px;
+// }
+
+// #gallery .photos img{
+// 	width: 100%;
+// 	position: absolute;
+// 	left: 0;
+// 	opacity: 0;
+// 	transition: opacity 1s;
+// }
+
+// #gallery .photos img.showed{
+// 	opacity: 1;
+// }
+
+
+form {
+  box-sizing: border-box;
+  width: 300px;
+  padding: 20px 10px;
+  border: none;
+  display: block;
+  overflow: hidden;
 }
 
-#gallery .photos{
-	position: relative;
-	height: 670px;
+label {
+  display: inline-block;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
 }
 
-#gallery .photos img{
-	width: 100%;
-	position: absolute;
-	left: 0;
-	opacity: 0;
-	transition: opacity 1s;
+span {
+  display: block;
+  margin-bottom: 7px;
 }
 
-#gallery .photos img.showed{
-	opacity: 1;
+input {
+  width: 100%;
+  padding: 10px 20px;
+  display: block;
+  outline: none;
+}
+
+input.active {
+  border: 1px solid red;
 }
 
 @import "media"; // Always at the end
