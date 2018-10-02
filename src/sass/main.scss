@@ -60,19 +60,47 @@ a {
 // 	background-color: #000;
 // }
 
-.items {
-	display: flex;
+// .items {
+// 	display: flex;
 
-}
-.item {
-	width: 100px;
-	height: 100px;
-	border: 1px solid #000;
-	margin-left: 20px;
-}
-.item-active {
-	border: 1px solid red;
+// }
+// .item {
+// 	width: 100px;
+// 	height: 100px;
+// 	border: 1px solid #000;
+// 	margin-left: 20px;
+// }
+// .item-active {
+// 	border: 1px solid red;
 
+// }
+
+html, body, ul, li{
+	margin: 0;
+	padding: 0;
+}
+
+#gallery{
+	width: 860px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#gallery .photos{
+	position: relative;
+	height: 670px;
+}
+
+#gallery .photos img{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+#gallery .photos img.showed{
+	opacity: 1;
 }
 
 @import "media"; // Always at the end

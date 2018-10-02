@@ -2,25 +2,25 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Template Basic Images Start -->
-    <meta property="og:image" content="path/to/image.jpg">
-    <link rel="icon" href="img/favicon/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
-    <!-- Template Basic Images End -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Template Basic Images Start -->
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="icon" href="img/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+  <!-- Template Basic Images End -->
 
-    <!-- Custom Browsers Color Start -->
-    <meta name="theme-color" content="#0083ff">
-    <!-- Custom Browsers Color End -->
-    <link rel="stylesheet" href="css/libs.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
+  <!-- Custom Browsers Color Start -->
+  <meta name="theme-color" content="#0083ff">
+  <!-- Custom Browsers Color End -->
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Document</title>
 </head>
 
 <body>
-    <!-- <section class="test">
+  <!-- <section class="test">
         <div class="container">
 
             <h1 id="blue-block">
@@ -104,7 +104,7 @@
         </div>
 
     </section> -->
-    <!-- 
+  <!-- 
     <section class="aj">
         <div id="container">
             <div id="result">
@@ -121,7 +121,7 @@
     </section> -->
 
 
-    <!-- <div class="items">
+  <!-- <div class="items">
         <div class="item" data-price='2500'>Товар 1</div>
         <div class="item" data-price='1700'>Товар 2</div>
         <div class="item" data-price='1300'>Товар 3</div>
@@ -131,127 +131,264 @@
 
     </div> -->
 
-    <input type="text" name='num1'>
+  <!-- <input type="text" name='num1'>
     <input type="button" name='calc' value="+">
     <input type="button" name='calc2' value="-">
     <input type="button" name='calc3' value="*">
     <input type="button" name='calc4' value="/">
     <input type="text" name='num2'>
-    <span class="res">=</span>
+    <span class="res">=</span> -->
+
+  <!-- <nav class="menu">
+    <a href="https://yandex.ru" target="_blank">Яндекс</a>
+    <a href="https://google.ru" target="_blank">Гугл</a>
+    <a href="https://mail.ru" target="_blank">Мэйл</a>
+  </nav> -->
+
+  <div id="gallery">
+    <div class="photos">
+      <img src="https://3.bp.blogspot.com/-rNPK38NcmBU/W3oqfmXJ_pI/AAAAAAAAJwQ/48hxbj19UagrsLQA__H5fMf3XyGET6ztwCLcBGAs/s1600/content-delivery-network-cdn-1288x724.png"
+        class="showed" alt="">
+      <img src="https://harunesener.files.wordpress.com/2013/11/cdn_network.png?w=646" alt="">
+      <img src="https://delovsaite.ru/img/blog/35-recommendations-part-1/info-cdn-en.jpg" alt="">
+      <img src="https://www.alux.com/wp-content/uploads/2017/12/cdn.jpg" alt="">
+      <img src="http://www.technodoze.com/wp-content/uploads/2016/04/why-use-a-cdn.jpg" alt="">
+      <img src="http://www.swaggtech.com/wp-content/uploads/2015/02/Content-Delivery-Networks-1024x558.jpeg" alt="">
+    </div>
+    <div class="buttons">
+      <input type="button" value="Назад" class="prev">
+      <input type="button" value="Вперёд" class="next">
+    </div>
+  </div>
 
 
-    <script>
-        var btn1 = document.querySelector('input[name=calc]');
-        var btn2 = document.querySelector('input[name=calc2]');
-        var btn3 = document.querySelector('input[name=calc3]');
-        var btn4 = document.querySelector('input[name=calc4]');
-        var inp1 = document.querySelector('input[name=num1]');
-        var inp2 = document.querySelector('input[name=num2]');
-        var span = document.querySelector('.res');
+  <script>
+    // var btn1 = document.querySelector('input[name=calc]');
+    // var btn2 = document.querySelector('input[name=calc2]');
+    // var btn3 = document.querySelector('input[name=calc3]');
+    // var btn4 = document.querySelector('input[name=calc4]');
+    // var inp1 = document.querySelector('input[name=num1]');
+    // var inp2 = document.querySelector('input[name=num2]');
+    // var span = document.querySelector('.res');
 
-        btn1.onclick = function () {
-            var res = parseInt(inp1.value) + parseInt(inp2.value);
-            span.innerHTML = res;
-        }
-        btn2.onclick = function () {
-            var res = parseInt(inp1.value) - parseInt(inp2.value);
-            span.innerHTML = res;
-        }
-        btn3.onclick = function () {
-            var res = parseInt(inp1.value) * parseInt(inp2.value);
-            span.innerHTML = res;
-        }
-        btn4.onclick = function () {
-            var res = parseInt(inp1.value) / parseInt(inp2.value);
-            span.innerHTML = res;
-        }
+    // btn1.onclick = function () {
+    //     var res = parseInt(inp1.value) + parseInt(inp2.value);
+    //     span.innerHTML = res;
+    // }
+    // btn2.onclick = function () {
+    //     var res = parseInt(inp1.value) - parseInt(inp2.value);
+    //     span.innerHTML = res;
+    // }
+    // btn3.onclick = function () {
+    //     var res = parseInt(inp1.value) * parseInt(inp2.value);
+    //     span.innerHTML = res;
+    // }
+    // btn4.onclick = function () {
+    //     var res = parseInt(inp1.value) / parseInt(inp2.value);
+    //     span.innerHTML = res;
+    // }
 
-        // window.onload = function (e) {
-        //     var items = document.querySelectorAll('.items .item');
-        //     var divPrice = document.querySelector('.value');
+    // window.onload = function (e) {
+    //     var items = document.querySelectorAll('.items .item');
+    //     var divPrice = document.querySelector('.value');
 
-        //     for (var i = 0; i < items.length; i++) {
-        //         items[i].onclick = function () {
-        //             this.classList.toggle('item-active');
-        //             calcPrice();
-        //         }
-        //     }
+    //     for (var i = 0; i < items.length; i++) {
+    //         items[i].onclick = function () {
+    //             this.classList.toggle('item-active');
+    //             calcPrice();
+    //         }
+    //     }
 
-        //     function calcPrice() {
-        //         var price = 0;
+    //     function calcPrice() {
+    //         var price = 0;
 
-        //         for (var i = 0; i < items.length; i++) {
-        //             if (items[i].classList.contains('item-active')) {
-        //                 price += parseInt(items[i].getAttribute('data-price'));
-        //             }
+    //         for (var i = 0; i < items.length; i++) {
+    //             if (items[i].classList.contains('item-active')) {
+    //                 price += parseInt(items[i].getAttribute('data-price'));
+    //             }
 
-        //         }
-        //         divPrice.innerHTML = price;
-        //     }
-        // }
+    //         }
+    //         divPrice.innerHTML = price;
+    //     }
+    // }
 
-        // var name = prompt('Введите ваше имя', '');
-        // alert('Ваше имя' + 'name');
+    // var name = prompt('Введите ваше имя', '');
+    // alert('Ваше имя' + 'name');
 
-        // var name = prompt('Каково официальное название JS', '');
-        // if (name =='ES') {
-        //     alert('ВЕРНО');
-        // }
-        // else {
-        //     alert ("Неверно")
-        // }
+    // var name = prompt('Каково официальное название JS', '');
+    // if (name =='ES') {
+    //     alert('ВЕРНО');
+    // }
+    // else {
+    //     alert ("Неверно")
+    // }
 
-        //     var value = prompt('Введите значение', '');
-        // if (value > 0) {
-        //     alert('1');
-        // }
-        // if (value < 0) {
-        //     alert('-1');
-        // }
-        // if (value == 0) {
-        //     alert('0');
-        // }
+    //     var value = prompt('Введите значение', '');
+    // if (value > 0) {
+    //     alert('1');
+    // }
+    // if (value < 0) {
+    //     alert('-1');
+    // }
+    // if (value == 0) {
+    //     alert('0');
+    // }
 
-        // var login = prompt('Введите логин', '');
+    // var login = prompt('Введите логин', '');
 
-        // if (login == 'Админ') {
-        //     var password = prompt('Введите пароль', '');
-        //     if (password == 'Пам') {
-        //         alert('Добро пожаловать!');
-        //     } else if (pass == null) {
-        //         alert('Вход отменён');
-        //     } else {
-        //         alert('Пароль неверен');
-        //     }
-        // }
-        // else if (login == null) {
-        //     alert('Вход отменён');
-        // }
-        // else {
-        //     alert('Я вас не знаю');
-        // }
+    // if (login == 'Админ') {
+    //     var password = prompt('Введите пароль', '');
+    //     if (password == 'Пам') {
+    //         alert('Добро пожаловать!');
+    //     } else if (pass == null) {
+    //         alert('Вход отменён');
+    //     } else {
+    //         alert('Пароль неверен');
+    //     }
+    // }
+    // else if (login == null) {
+    //     alert('Вход отменён');
+    // }
+    // else {
+    //     alert('Я вас не знаю');
+    // }
 
-        // if (a + b < 4) {
-        //     result = 'Мало';
-        // } else {
-        //     result = 'Много';
-        // }
+    // if (a + b < 4) {
+    //     result = 'Мало';
+    // } else {
+    //     result = 'Много';
+    // }
 
-        //    access = (a + b < 4) ? 'Мало': 'Много';
+    //    access = (a + b < 4) ? 'Мало': 'Много';
 
-        // var login = prompt('Введите имя', '');
-        // (login == 'Вася') ?
-        //     alert('Привет') : alert('Здравствуйте');
+    // var login = prompt('Введите имя', '');
+    // (login == 'Вася') ?
+    //     alert('Привет') : alert('Здравствуйте');
 
-       if (age <  14 || age > 90);
-       if (!(age >=  14 && age <= 90));
+    //    if (age <  14 || age > 90);
+    //    if (!(age >=  14 && age <= 90));
 
-    </script>
+    // for (var i = 2; i <= 10; i++) {
+
+    //   if (i % 2 == 0) {
+    //     alert(i);
+    //   }
+    // }
+
+    // var i = 0;
+    // while (i < 3) {
+    //   alert("номер " + i + "!");
+    //   i++;
+    // }
+
+
+    // var num;
+
+    // do {
+    //   num = prompt("Введите число больше 100?", 0);
+    // }
+    // while (num <= 100 && num != null);
+
+    //     var browser = prompt('Введите название браузера', '');
+
+    //     if (browser == 'IE') {
+    //       alert('О, да у вас IE!');
+    //     }
+    //     else if (browser == 'Chrome'
+    //  || browser == 'Firefox'
+    //  || browser == 'Safari'
+    //  || browser == 'Opera') {
+    //       alert('Тоже ничего');
+    //     }
+    //     else {
+    //       alert('Мы надеемся, что и в вашем браузере все ок!');
+    //     }
+
+
+    // var a = +prompt('a?', '');
+
+    // if (a == 0) {
+    //   alert( 0 );
+    // }
+    // if (a == 1) {
+    //   alert( 1 );
+    // }
+
+    // if (a == 2 || a == 3) {
+    //   alert( '2,3' );
+    // }
+
+    // switch(a) {
+    //   case 0:
+    //   alert( 0 ); 
+    //   break;
+
+    //   case 1:
+    //   alert( 1 ); 
+    //   break;
+    //   case 3 || 2:
+    //   alert( '2,3' );
+    //   break;
+
+    // }
+
+    // var links = document.querySelectorAll('a[target=_blank]');
+
+    // for (var i = 0; i < links.length; i++) {
+    //   links[i].onclick = confimAway;
+    // }
+
+    // function confimAway() {
+    //   if(!confirm("Перейти?")) //если не подтверждено, не переходим
+    //  return false; // отмена стандартного поведения
+    // }
+
+    // var images = document.querySelectorAll('.gallery img');
+
+    // for (var i = 0; i < images.length; i++) {
+    //   images[i].onmousedown = stopMove;
+    // }
+
+    // function stopMove(e) {
+    //   return false;
+    // }
+
+    var btn_prev = document.querySelector('#gallery .buttons .prev');
+    var btn_next = document.querySelector('#gallery .buttons .next');
+
+    var images = document.querySelectorAll('#gallery .photos img');
+    var i = 0;
+
+    btn_prev.onclick = function () {
+      images[i].classList.remove('showed');
+      i--;
+
+      if (i < 0) {
+        i = images.length - 1;
+      }
+
+      images[i].classList.add('showed');
+    }
+
+    btn_next.onclick = function () {
+      images[i].classList.remove('showed');
+      i++;
+
+      if (i >= images.length) {
+        i = 0;
+      }
+
+      images[i].classList.add('showed');
+    }
+
+
+
+  </script>
 
 
 
 
-    <script src="js/scripts.min.js"></script>
+  <script src="js/scripts.min.js"></script>
 </body>
 
 </html>
