@@ -1,9 +1,23 @@
 $(document).ready(function() {
 
-  $("a")
-  $("#some-id")
-  $(".someclass")
-  $("header > ul:has(a)")
+  $('.block .a:first').show();
+  $(".block .q").on('click',function () {
+
+    var answer =  $(this).next();
+    
+    $('.block .a:visible').not(answer).slideUp(1000);
+    answer.slideToggle(1000);
+
+  }); 
+
+  // $(".q").click(function() {
+  //   $(".a").slideToggle(1000);
+  // });
+
+  // $("a")
+  // $("#some-id")
+  // $(".someclass")
+  // $("header > ul:has(a)")
 
   // setInterval(function(){ // Function inside works with 1000ms interval
   //   $(".blue-block").fadeIn('3000', function () {
@@ -159,11 +173,8 @@ $(document).ready(function() {
 
   //   $.post(url, {title:title, body:body}).
   //     done(function(data){
-  //     console.log('Post saved'); 
+  //     console.log('Post saved');
   //     console.log(data);
   //   });
   // });
-
-
-
 });

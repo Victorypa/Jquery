@@ -103,36 +103,50 @@ html, body, ul, li{
 // 	opacity: 1;
 // }
 
+// form{
+// 	padding:20px;
+// }
 
-form {
-  box-sizing: border-box;
-  width: 300px;
-  padding: 20px 10px;
-  border: none;
-  display: block;
-  overflow: hidden;
-}
+// input{
+// 	text-align: center;
+// 	box-sizing: border-box;
+// }
 
-label {
-  display: inline-block;
-  margin-bottom: 20px;
-  border: 1px solid transparent;
-}
+// .wrong{
+// 	border:1px solid red;
+// }
 
-span {
-  display: block;
-  margin-bottom: 7px;
-}
+// .overlay {
+// 	position: fixed;
+// 	top: 0;
+// 	left: 0;
+// 	height: 100%;
+// 	width: 100%;
+// 	background-color: rgba(0,0,0,0.5);
+// 	z-index: 10;
+// display: none;
+// }
+// .modal {
+// 	width: 500px;
+// 	height: 300px;
+// 	position: fixed;
+// 	top: 50%; 
+// 	left: 50%;
+// 	margin-top: -150px;
+// 	margin-left: -250px;
+// 	background-color: #ccc;;
+// 	border-radius: 5px;
+// 	text-align: center;
+// 	z-index: 11; 
+// padding: 40px;
+// display: none;
+// }
+// .content {
+// 	margin: 30px;
+// }
 
-input {
-  width: 100%;
-  padding: 10px 20px;
-  display: block;
-  outline: none;
-}
-
-input.active {
-  border: 1px solid red;
+.a {
+	display: none;
 }
 
 @import "media"; // Always at the end
